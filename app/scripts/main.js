@@ -4,3 +4,5 @@ var songs = {
 },
     source = $('#music').html(),
     template = Handlebars.compile(source);
+
+    $('#list').append(template(songs));
