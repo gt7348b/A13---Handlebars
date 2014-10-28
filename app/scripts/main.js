@@ -1,1 +1,6 @@
-console.log('The Iron Yard Rocks');
+var songs = {
+  music: 'Lost',
+  composer: 'Michael Buble'
+},
+    source = $('#music').html(),
+    template = Handlebars.compile(source);
