@@ -14,6 +14,6 @@ var playlist = {
   ]
 };
     //source = $('#music').html(),
-    template = Handlebars.templates(music);
+    var template = Handlebars.templates(music);
 
     $('#list').append(template(playlist));
