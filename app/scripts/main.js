@@ -13,7 +13,7 @@ var playlist = {
     { song: 'Empty Streets', artist: 'Tiesto'}
   ]
 };
-    source = $('#music').html(),
-    template = Handlebars.compile(source);
+    //source = $('#music').html(),
+    template = Handlebars.templates(music);
 
     $('#list').append(template(playlist));
