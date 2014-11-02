@@ -1,7 +1,7 @@
 var songs = {
   music: 'Lost',
   composer: 'Michael Buble'
-},
+};
 
 
 var playlist = {
@@ -16,4 +16,4 @@ var playlist = {
     source = $('#music').html(),
     template = Handlebars.compile(source);
 
-    $('#list').append(template(songs));
+    $('#list').append(template(playlist));
