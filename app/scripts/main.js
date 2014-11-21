@@ -13,7 +13,9 @@ var playlist = {
     { song: 'Empty Streets', artist: 'Tiesto'}
   ]
 };
-    //source = $('#music').html(),
-    var template = Handlebars.templates(music);
+    var source = $('#music').html();
+    var template = Handlebars.compile(source);
+    console.log(template);
+    console.log(playlist);
 
-    $('#list').append(template(playlist));
+    $('.list').append(template(playlist));

@@ -25,14 +25,17 @@
 
     <div class="hero-unit">
       <h1>My Favorite Music</h1>
-      <p> I listen to different music to help me work. These are some of things I am currently listening to</p>
-      <ul id='list'>
+      <p> I listen to different music to help me work. These are some of things I am currently listening to:</p>
+      <ul id='list' class='list'>
       </ul>
 
     </div>
 
-    <script type="text/x-handlebars-template" id="music">
-      I'm currently listening to {{ song }} by {{ artist }}
+    <script type="text/x-handlebars-template" id="music" >
+      {{#each songs }}<li>
+        I'm currently listening to {{ song }} by {{ artist }}
+      </li>
+      {{/each}}
     </script>
 
 
